@@ -29,7 +29,7 @@ incrementBtn.addEventListener("click", () => {
   count++;
   updateUI();
 });
-
+ 
 // Decrement
 decrementBtn.addEventListener("click", () => {
   if (count > 0) {
