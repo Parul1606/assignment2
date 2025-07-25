@@ -1,0 +1,52 @@
+body {
+  background-color: black;  /* ✅ Black background */
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+}
+
+.count-text {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.underline {
+  border: 0;
+  height: 1px;
+  background: white;  /* added White underline */
+  width: 60%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;          /* Red error */
+  display: none;       /* it will be hidden initially */
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  background: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
