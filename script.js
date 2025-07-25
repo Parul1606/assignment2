@@ -9,14 +9,14 @@ const clearBtn = document.getElementById("clear");
 function updateUI() {
   countElement.textContent = count;
 
-  // ✅ Show error only if count == 0
+  // Show error only if count == 0
   if (count === 0) {
     errorElement.style.display = "block";
   } else {
     errorElement.style.display = "none";
   }
 
-  // ✅ Show Clear button only if count > 1
+  // Show Clear button only if count > 1
   if (count > 1) {
     clearBtn.style.display = "inline-block";
   } else {
@@ -24,13 +24,13 @@ function updateUI() {
   }
 }
 
-// ✅ Increment
+// Increment
 incrementBtn.addEventListener("click", () => {
   count++;
   updateUI();
 });
 
-// ✅ Decrement
+// Decrement
 decrementBtn.addEventListener("click", () => {
   if (count > 0) {
     count--;
@@ -38,11 +38,11 @@ decrementBtn.addEventListener("click", () => {
   updateUI();
 });
 
-// ✅ Clear
+// Clear
 clearBtn.addEventListener("click", () => {
   count = 0;
   updateUI();
 });
 
-// ✅ Initialize UI on load
+// Initialize UI on load
 updateUI();
